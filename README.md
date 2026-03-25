@@ -20,7 +20,7 @@ This is my personal portfolio website built using HTML, CSS, and JavaScript.
 
 ## 📬 Contact
 
-- GitHub: https://github.com/shivarajadharshiniDurairajan
+- GitHub: https://github.com/shivarajadharshini_Durairajan
   
 
 
