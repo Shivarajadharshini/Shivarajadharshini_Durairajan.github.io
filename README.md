@@ -19,8 +19,8 @@ This is my personal portfolio website built using HTML, CSS, and JavaScript.
 - Grocery Shop Management System
 
 ## 📬 Contact
-- Email: your@email.com
-- GitHub: https://github.com/yourusername
 
-## 🌍 Live Website
-https://yourusername.github.io
+- GitHub: https://github.com/shivarajadharshini Durairajan
+  
+
+
