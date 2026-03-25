@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #eef2f7;
+      text-align: center;
+    }
+
+    header {
+      background: #1f2a44;
+      color: white;
+      padding: 40px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    /* Tabs */
+    .tab-buttons {
+      margin: 20px;
+    }
+
+    .tab-buttons button {
+      padding: 10px 18px;
+      margin: 5px;
+      border: none;
+      background: #1f2a44;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .tab-buttons button:hover {
+      background: #3f72af;
+    }
+
+    .active-btn {
+      background: #3f72af !important;
+    }
+
+    /* Sections */
+    .tab-content {
+      display: none;
+      background: white;
+      margin: 20px auto;
+      padding: 25px;
+      width: 85%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .active {
+      display: block;
+    }
+
+    h2 {
+      color: #1f2a44;
+    }
+
+    /* Highlight */
+    .blue { color: #3f72af; font-weight: bold; }
+    .green { color: #27ae60; font-weight: bold; }
+    .purple { color: #8e44ad; font-weight: bold; }
+
+    /* Skills */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .skill {
+      background: #f4f6f8;
+      padding: 15px;
+      border-radius: 10px;
+      width: 110px;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      transform: scale(1.1);
+      background: #e3ebf5;
+    }
+
+    .skill i {
+      font-size: 40px;
+    }
+
+    /* Cards */
+    .card {
+      background: #f9fbfd;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Hi, I'm <span class="blue">Your Name</span> 👋</h1>
+  <p>
+    <span class="green">Full Stack Developer</span> | 
+    <span class="blue">Software Trainer</span> | 
+    <span class="purple">AI Enthusiast</span>
+  </p>
+</header>
+
+<!-- Tabs -->
+<div class="tab-buttons">
+  <button onclick="showTab('about', this)" class="active-btn">About</button>
+  <button onclick="showTab('projects', this)">Projects</button>
+  <button onclick="showTab('skills', this)">Skills</button>
+  <button onclick="showTab('experience', this)">Experience</button>
+  <button onclick="showTab('education', this)">Education</button>
+  <button onclick="showTab('contact', this)">Contact</button>
+</div>
+
+<!-- About -->
+<div id="about" class="tab-content active">
+  <h2>About Me</h2>
+  <p>
+    I am a <span class="green">motivated developer</span> passionate about building 
+    <span class="blue">real-world applications</span> using modern technologies.  
+    I enjoy working on <span class="purple">IoT systems, web apps, and AI solutions</span>.
+  </p>
+</div>
+
+<!-- Projects -->
+<div id="projects" class="tab-content">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Coal Mine Safety System</h3>
+    <p>IoT-based monitoring with real-time alerts for worker safety.</p>
+  </div>
+
+  <div class="card">
+    <h3>Smart Healthcare System</h3>
+    <p>Tracks patient vitals and provides real-time health insights.</p>
+  </div>
+
+  <div class="card">
+    <h3>Grocery Management System</h3>
+    <p>Inventory and billing system for small businesses.</p>
+  </div>
+</div>
+
+<!-- Skills -->
+<div id="skills" class="tab-content">
+  <h2>Skills</h2>
+
+  <div class="skills-container">
+    <div class="skill"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+    <div class="skill"><i class="devicon-html5-plain colored"></i><p>HTML</p></div>
+    <div class="skill"><i class="devicon-css3-plain colored"></i><p>CSS</p></div>
+    <div class="skill"><i class="devicon-java-plain colored"></i><p>Java</p></div>
+    <div class="skill"><i class="devicon-c-plain colored"></i><p>C</p></div>
+    <div class="skill"><i class="devicon-cplusplus-plain colored"></i><p>C++</p></div>
+  </div>
+</div>
+
+<!-- Experience -->
+<div id="experience" class="tab-content">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Software Trainer</h3>
+    <p>Teaching programming concepts and guiding students in projects.</p>
+  </div>
+
+  <div class="card">
+    <h3>Project Developer</h3>
+    <p>Built IoT and software-based real-world systems.</p>
+  </div>
+</div>
+
+<!-- Education -->
+<div id="education" class="tab-content">
+  <h2>Education</h2>
+
+  <div class="card">
+    <p>Bachelor’s Degree in Engineering / Computer Science</p>
+  </div>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="tab-content">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+  <p>GitHub: github.com/yourusername</p>
+</div>
+
+<script>
+  function showTab(tabId, btn) {
+    let tabs = document.querySelectorAll('.tab-content');
+    let buttons = document.querySelectorAll('.tab-buttons button');
+
+    tabs.forEach(tab => tab.classList.remove('active'));
+    buttons.forEach(b => b.classList.remove('active-btn'));
+
+    document.getElementById(tabId).classList.add('active');
+    btn.classList.add('active-btn');
+  }
+</script>
+
+</body>
+</html>
