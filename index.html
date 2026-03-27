@@ -96,8 +96,8 @@
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
-      margin-top: 10px;
       justify-content: center;
+      margin-top: 10px;
     }
 
     .output-images img {
@@ -127,6 +127,12 @@
       padding: 15px;
       border-radius: 10px;
       text-align: left;
+    }
+
+    a {
+      color: #0072ff;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -161,8 +167,8 @@
     <button class="output-btn" onclick="toggleOutput('out1')">Project Outputs</button>
     <div id="out1" class="output-box">
       <div class="output-images">
-        <img src="images/project1-architecture.jpg" alt="Project 1 Architecture">
-        <img src="images/project1-output.jpg" alt="Project 1 Output">
+        <img src="images/project1-architecture.jpg" alt="">
+        <img src="images/project1-output.jpg" alt="">
       </div>
     </div>
   </div>
@@ -173,8 +179,8 @@
     <button class="output-btn" onclick="toggleOutput('out2')">Project Outputs</button>
     <div id="out2" class="output-box">
       <div class="output-images">
-        <img src="images/project2-architecture.jpg" alt="Project 2 Architecture">
-        <img src="images/project2-output.jpg" alt="Project 2 Output">
+        <img src="images/project2-architecture.jpg" alt="">
+        <img src="images/project2-output.jpg" alt="">
       </div>
     </div>
   </div>
@@ -185,8 +191,8 @@
     <button class="output-btn" onclick="toggleOutput('out3')">Project Outputs</button>
     <div id="out3" class="output-box">
       <div class="output-images">
-        <img src="images/project3-architecture.jpg" alt="Project 3 Architecture">
-        <img src="images/project3-output.jpg" alt="Project 3 Output">
+        <img src="images/project3-architecture.jpg" alt="">
+        <img src="images/project3-output.jpg" alt="">
       </div>
     </div>
   </div>
@@ -213,16 +219,31 @@
 
 <div id="education" class="tab-content">
   <h2>Education</h2>
+
   <div class="edu-card">
     <h3>B.E Computer Science</h3>
     <p><strong>CGPA:</strong> 9.4 / 10 ⭐</p>
     <p>🏆 Academic First Rank Holder</p>
+  </div>
+
+  <div class="edu-card">
+    <h3>B.A Hindi</h3>
+    <p>First Class - A Grade</p>
+  </div>
+
+  <div class="edu-card">
+    <h3>PGDCA</h3>
+    <p>First Class - A Grade</p>
   </div>
 </div>
 
 <div id="contact" class="tab-content">
   <h2>Contact</h2>
   <p>Email: your@email.com</p>
+  <p>
+    <a href="#">LinkedIn</a> | 
+    <a href="#">GitHub</a>
+  </p>
 </div>
 
 <script>
