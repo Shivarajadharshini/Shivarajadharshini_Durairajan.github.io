@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio
 
-This is my personal portfolio website built using HTML, CSS, and JavaScript.
+This is Shivarajadharshini durairajan ,my personal portfolio website built using HTML, CSS, and JavaScript.
 
 ## 🚀 Features
 - Responsive design
